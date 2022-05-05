@@ -52,7 +52,12 @@ function check(){
         if(question_turn == "player1")
         {
             question_turn = "player2"
-            
+            document.getElementById("player_question").innerHTML = "Turno para preguntar - " + player2_name ;
+        }
+        else
+        {
+            question_turn = "player1"
+            document.getElementById("player_question").innerHTML = "Turno para preguntar - " + player1_name ;
         }
     }
 }
